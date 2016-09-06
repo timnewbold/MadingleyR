@@ -20,7 +20,7 @@ DownloadRelease(codeDir = codeDir)
 Then download the necessary input data:
 
 ```R
-DownloadMadingleyData(codeDir = codeDir)
+GetMadingleyData(codeDir = codeDir)
 ```
 
 Finally, run the model:
