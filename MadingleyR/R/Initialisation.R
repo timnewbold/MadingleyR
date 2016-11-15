@@ -51,7 +51,7 @@ MadingleyInitialisation <- function(bottom_lat=-65,
                output_metrics=output_metrics,
                track_land_use=track_land_use,
                live_outputs=live_outputs,
-               specific_locations=ifelse(is.null(locations),FALSE,TRUE),
+               specific_locations=ifelse(is.null(specific_locations),FALSE,TRUE),
                save_final_state=save_final_state,
                read_state=read_state)
   
