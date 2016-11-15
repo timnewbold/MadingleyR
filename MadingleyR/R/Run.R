@@ -149,7 +149,7 @@ RunMadingley <- function(codeDir,init){
   
   dir2 <- dir()
   
-  outputDir <- setdiff(dir1,dir2)
+  outputDir <- setdiff(dir2,dir1)
   
   setwd(origDir) 
   
