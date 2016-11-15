@@ -249,7 +249,7 @@ RunMadingley <- function(codeDir,init,params){
   paramsDF$Name[(row.names(paramsDF)=="plants_terr_carbonperleafmass")] <- "RevisedTerrestrialPlantModel.MassCarbonPerMassLeafDryMatter"
   paramsDF$Name[(row.names(paramsDF)=="plants_terr_dryperleafmass")] <- "RevisedTerrestrialPlantModel.MassLeafDryMatterPerMassLeafWetMatter"
   
-  write.csv(x = params,file = "input/Model setup/Ecological definition files/EcologicalParameters.csv",
+  write.csv(x = paramsDF,file = "input/Model setup/Ecological definition files/EcologicalParameters.csv",
             quote = FALSE,row.names = FALSE)
   
   dir1 <- dir()
