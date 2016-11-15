@@ -153,6 +153,6 @@ RunMadingley <- function(codeDir,init){
   
   setwd(origDir) 
   
-  return(list(outputDir=outputDir))
+  return(list(outputDir=paste(codeDir,"/MadingleyBuild/",outputDir,sep="")))
   
 }
