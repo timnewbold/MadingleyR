@@ -131,12 +131,12 @@ RunMadingley <- function(codeDir,init){
   
   write.csv(x = initDFs$`1`,file = "input/Model setup/SimulationControlParameters.csv",
             quote = FALSE,row.names = FALSE)
-  write.csv(x = initDFs$`2`,file = "/input/Model setup/OutputControlParameters.csv",
+  write.csv(x = initDFs$`2`,file = "input/Model setup/OutputControlParameters.csv",
             quote = FALSE,row.names = FALSE)
-  write.csv(x = initDFs$`3`,file = "/input/Model setup/FileLocationParameters.csv",
+  write.csv(x = initDFs$`3`,file = "input/Model setup/FileLocationParameters.csv",
             quote = FALSE,row.names = FALSE)
   write.table(x = initDFs$`4`$Value,
-              file = "/input/Model setup/Initial Model State Setup/OutputsLabel.csv",
+              file = "input/Model setup/Initial Model State Setup/OutputsLabel.csv",
               sep=",",quote = FALSE,row.names = FALSE,col.names = FALSE)
   
   write.csv(x = init$locations,
