@@ -143,8 +143,16 @@ RunMadingley <- function(codeDir,init){
             file = "input/Model setup/Initial model state setup/SpecificLocations.csv",
             quote = FALSE,row.names = FALSE)
   
+  dir1 <- dir()
+  
   shell("Madingley.exe")
- 
+  
+  dir2 <- dir()
+  
+  outputDir <- setdiff(dir1,dir2)
+  
   setwd(origDir) 
+  
+  return(list(outputDir=outputDir))
   
 }
