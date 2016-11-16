@@ -1,4 +1,4 @@
-RunMadingley <- function(codeDir,init,params){
+RunMadingley <- function(codeDir,init,params,numSims=1,scenarios=NULL){
   
   origDir <- getwd()
   
@@ -250,6 +250,17 @@ RunMadingley <- function(codeDir,init,params){
   paramsDF$Name[(row.names(paramsDF)=="plants_terr_dryperleafmass")] <- "RevisedTerrestrialPlantModel.MassLeafDryMatterPerMassLeafWetMatter"
   
   write.csv(x = paramsDF,file = "input/Model setup/Ecological definition files/EcologicalParameters.csv",
+            quote = FALSE,row.names = FALSE)
+  
+  if(is.null(scenarios)){
+    scenarios <- data.frame(label="NI",npp="no 0.0 0",temperature="no 0.0",
+                            harvesting="no 0.0")
+    scenarios[,'simulation number'] <- numSims
+  } else {
+    
+  }
+  
+  write.csv(x = scenarios,file = "input/Model setup/Initial model state setup/Scenarios.csv",
             quote = FALSE,row.names = FALSE)
   
   dir1 <- dir()
