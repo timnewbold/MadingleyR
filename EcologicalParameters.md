@@ -4,7 +4,7 @@ This document lists all of the parameters required by the Madingley Model, their
 
 ### _Reproduction_
 
-Sub-process | ModelSetup argument | Madingley Parameter | Default Value | Description
+Sub-process | MadingleyR argument | Madingley Parameter | Default Value | Description
 :---: | :---: | :---: | :---: | :---:
 - | reprod_timeunit | Reproduction.Basic.TimeUnitImplementation | 1 (Month) | Time unit used within reproduction
 - | reprod_semelparityallocation | Reproduction.Basic.SemelparityAdultMassAllocation | 0.5 | Proportion of body mass semelparous organisms devote to reproduction
@@ -14,7 +14,7 @@ Sub-process | ModelSetup argument | Madingley Parameter | Default Value | Descri
 
 ### _Metabolism_
 
-Sub-process | ModelSetup argument | Madingley Parameter | Default Value | Description
+Sub-process | MadingleyR argument | Madingley Parameter | Default Value | Description
 :---: | :---: | :---: | :---: | :---:
 - | boltzmann | BoltzmannConstant | 0.00008617 | Boltzmann's constant
 - | metab_energyscalar | Metabolism.EnergyScalar | 0.036697248 | Scalar used to convert kJ to grams of body mass
@@ -31,7 +31,7 @@ Ectotherms | metab_ecto_basalnormalization | Metabolism.Ectotherm.NormalizationC
 
 ### _Activity_
 
-Sub-process | ModelSetup argument | Madingley Parameter | Default Value | Description
+Sub-process | MadingleyR argument | Madingley Parameter | Default Value | Description
 :---: | :---: | :---: | :---: | :---:
 Terrestrial | activity_terr_wtintercept | Activity.Terrestrial.WarmingToleranceIntercept | 6.61 | Intercept of relationship between warming tolerance of ectotherms and annual temperature variability
 Terrestrial | activity_terr_wtslope | Activity.Terrestrial.WarmingToleranceSlope | 1.6 | Slope of relationship between warming tolerance of ectotherms and annual temperature variability
@@ -40,7 +40,7 @@ Terrestrial | activity_terr_tsmslope | Activity.Terrestrial.TSMSlope | 1.53 | Sl
 
 ### _Mortality_
 
-Sub-process | ModelSetup argument | Madingley Parameter | Default Value | Description
+Sub-process | MadingleyR argument | Madingley Parameter | Default Value | Description
 :---: | :---: | :---: | :---: | :---:
 Background | mort_bg_timeunit | Mortality.Background.TimeUnitImplementation | 0 (Day) | Time unit used within mortality
 Background | mort_bg_mortrate | Mortality.Background.MortalityRate | 0.001 | Background rate of mortality
@@ -56,7 +56,7 @@ Starvation | mort_starv_maxrate | Mortality.Starvation.MaximumStarvationRate | 1
 
 ### Herbivory
 
-Sub-process | ModelSetup argument | Madingley Parameter | Default Value | Description
+Sub-process | MadingleyR argument | Madingley Parameter | Default Value | Description
 :---: | :---: | :---: | :---: | :---:
 - | herb_timeunit | Herbivory.RevisedHerbivory.TimeUnitImplementation | 0 (Day) | Time unit used within herbivory
 - | herb_handlingrefmass | Herbivory.RevisedHerbivory.HandlingTimeReferenceMass | 1 | Reference herbivore mass for calculating handling time
@@ -71,7 +71,7 @@ Terrestrial | herb_terr_attackexponent | Herbivory.RevisedHerbivory.Terrestrial.
 Terrestrial | herb_lu_attack | Herbivory.RevisedHerbivory.NonPreferredLanduseAttackRateProportion | 0.9 | Proportional attack rate realised in non-preferred land uses
 
 ### Predation
-Sub-process | ModelSetup argument | Madingley Parameter | Default Value | Description
+Sub-process | MadingleyR argument | Madingley Parameter | Default Value | Description
 :---: | :---: | :---: | :---: | :---:
 - | pred_timeunit | Predation.RevisedPredation.TimeUnitImplementation | 0 (Day) | Time unit used within predation
 - | pred_handlingrefmass | Predation.RevisedPredation.HandlingTimeReferenceMass | 1 | Reference predator mass for calculating handling time
@@ -90,7 +90,7 @@ Terrestrial | activationattackrate | Predation.RevisedPredation.ActivationEnergy
 
 ### Dispersal
 
-Sub-process | ModelSetup argument | Madingley Parameter | Default Value | Description
+Sub-process | MadingleyR argument | Madingley Parameter | Default Value | Description
 :---: | :---: | :---: | :---: | :---:
 Advective | disp_advective_timeunit | Dispersal.Advective.TimeUnitImplementation | 1 (Month) | Time unit used within dispersal
 Advective | disp_advective_horizdiffusivity | Dispersal.Advective.HorizontalDiffusivity | 100 | Diffusivity of planktonic organisms
@@ -106,7 +106,7 @@ Responsive | disp_responsive_massexponent | Dispersal.Responsive.DispersalSpeedB
 
 ### Plants
 
-Sub-process | ModelSetup argument | Madingley Parameter | Default Value | Description
+Sub-process | MadingleyR argument | Madingley Parameter | Default Value | Description
 :---: | :---: | :---: | :---: | :---:
 Marine | autotrophprocessor_phytoplanktonratio | AutotrophProcessor.ConvertNPPtoAutotroph.PhytoplanktonConversionRatio | 10.0 | Factor to convert phytoplankton biomass from grams carbon to grams wet weight
 Terrestrial | plants_terr_maxnpp | RevisedTerrestrialPlantModel.max_NPP | 0.961644704 | Maximum possible NPP (g C per m2 per year)
