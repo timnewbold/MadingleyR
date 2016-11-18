@@ -260,6 +260,7 @@ RunMadingley <- function(codeDir,init,params,numSims=1,scenarios=NULL){
     scenarios <- data.frame(label=scenarios$label,npp=scenarios$npp,
                             temperature=scenarios$temperature,
                             harvesting=scenarios$harvesting)
+    scenarios[,'simulation number'] <- numSims
   }
   
   write.csv(x = scenarios,file = "input/Model setup/Initial model state setup/Scenarios.csv",
