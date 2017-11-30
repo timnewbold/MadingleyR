@@ -6,8 +6,9 @@ GetMadingleyData <- function(codeDir,zipFile=NULL){
   }
  
   if(is.null(zipFile)){
-    download.file(url = "https://dl.dropboxusercontent.com/u/23999497/MadingleyData.zip",
-                  destfile = paste(codeDir,"/MadingleyBuild/input/MadingleyData.zip",sep=""))
+    download.file(url = "https://www.dropbox.com/s/eiowm9hsn4wn511/MadingleyData.zip?dl=0",
+                  destfile = paste(codeDir,"/MadingleyBuild/input/MadingleyData.zip",sep=""),
+                  method="wget")
     
     unzip(zipfile = paste(codeDir,"/MadingleyBuild/input/MadingleyData.zip",sep=""),
           exdir = paste(codeDir,"/MadingleyBuild/input",sep=""))

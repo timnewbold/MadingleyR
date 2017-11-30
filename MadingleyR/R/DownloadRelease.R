@@ -6,8 +6,9 @@ DownloadRelease <- function(codeDir){
   suppressWarnings(dir.create(paste(codeDir,"/MadingleyBuild",sep="")))
   
   
-  download.file(url = "https://dl.dropboxusercontent.com/u/23999497/MadingleyMasterCompiled.zip",
-                destfile = paste(codeDir,"/MadingleyBuild/MadingleyMasterCompiled.zip",sep=""))
+  download.file(url = "https://www.dropbox.com/s/lyc9vcjfsrhrryv/MadingleyMasterCompiled.zip?dl=0",
+                destfile = paste(codeDir,"/MadingleyBuild/MadingleyMasterCompiled.zip",sep=""),
+                method="wget")
   
   unzip(zipfile = paste(codeDir,"/MadingleyBuild/MadingleyMasterCompiled.zip",sep=""),
         exdir = paste(codeDir,"/MadingleyBuild",sep=""))
